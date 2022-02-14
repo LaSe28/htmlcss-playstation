@@ -1,5 +1,9 @@
 /* generali */
-
+:root{
+    --main-blue: #3B63DE;
+    --main-red: #BD4825;
+    --main-grey: #1f1f1f;
+}
 .pt-6{
     padding-top: 6rem;
 }
@@ -11,6 +15,14 @@
 
 .p-relative{
     position: relative;
+}
+
+.rad_btn{
+    border-radius: 1.2em;
+}
+
+.btn_bg:focus{
+    box-shadow: none;
 }
 
 
@@ -73,13 +85,11 @@ nav .first-ul{
     transform: translate(-50%);
 }
 
-.rad_btn{
-    border-radius: 1em;
-}
+
 
 /* banner section */
 
-.bg-image{
+.banner-sec{
     background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -89,9 +99,9 @@ nav .first-ul{
 }
 
 .banner-sec .btn_bg{
-    background-color: red;
+    background-color: var(--main-red);
     color: white;
-    border-color: red;
+    border-color: var(--main-red);
 }
 
 .banner-text{
@@ -110,5 +120,60 @@ nav .first-ul{
     border-radius: 1rem;
 }
 
+/*  section intro*/
 
+.intro-ps5-sec h4{
+    color: var(--main-blue)
+}
 
+/* section info */
+
+.info-ps5-sec .btn_bg{
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    color: white;
+}
+
+.info-ps5-sec img{
+    width: 100%;
+}
+
+.info-ps5-sec [class*="-4"]{
+    opacity: .7;
+}
+
+.info-ps5-sec .active{
+    border-bottom: 2px solid var(--main-blue);
+    opacity: 1;
+}
+
+/* second banner-sec */
+.banner-sec-2{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.banner-sec-2 img{
+    width: 80%;
+}
+
+.banner-sec-2 .btn_bg{
+    background-color: var(--main-red);
+    color: white;
+    border-color: var(--main-red);
+}
+
+/* games sec 2 */
+
+.games-sec-2{
+    background-color: var(--main-grey);
+    color: white;
+}
+
+.games-sec-2 img{
+    width: 100%;
+    border-radius: 1rem;
+}
