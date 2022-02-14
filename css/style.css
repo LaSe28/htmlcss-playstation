@@ -1,4 +1,50 @@
+/* generali */
+
+.pt-6{
+    padding-top: 6rem;
+}
+
+
+.pt-20{
+    padding-top: 20rem;
+}
+
+.p-relative{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/* header */
+header{
+    background-color: black;
+    text-align: right;
+}
+
+header [src*="sony"]{
+    height: 20px;
+    padding: 2px;
+    padding-right: .5rem;
+}
+
+
 /* nav section */
+li, ul{
+    list-style: none;
+}
+
+nav .first-ul{
+    width: 100%;
+}
+
+.items-ul{
+    width: 560px;
+}
 
 .menu_item{
     position: relative;
@@ -12,6 +58,14 @@
     background-color: white;
 }
 
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
 .menu_item .menu_item_text{
     position: absolute;
     bottom: -1rem;
@@ -19,14 +73,32 @@
     transform: translate(-50%);
 }
 
-li, ul{
-    list-style: none;
+.rad_btn{
+    border-radius: 1em;
 }
 
-nav .first-ul{
-    width: 100%;
+/* first section */
+
+.bg-image{
+    background-image: url(../img/jumbo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: 6rem;
 }
 
-.items-ul{
-    width: 400px;
+.banner .btn_bg{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.banner-text{
+    position: absolute;
+    bottom: 0;
+}
+
+.banner [src*="hero"]{
+    width: 50%;
 }
