@@ -3,6 +3,7 @@
     --main-blue: #3B63DE;
     --main-red: #BD4825;
     --main-grey: #1f1f1f;
+    --lightgrey: #BEBCBB;
 }
 .pt-6{
     padding-top: 6rem;
@@ -23,6 +24,10 @@
 
 .btn_bg:focus{
     box-shadow: none;
+}
+
+.fs-7{
+    font-size: 0.8rem;
 }
 
 
@@ -176,4 +181,44 @@ nav .first-ul{
 .games-sec-2 img{
     width: 100%;
     border-radius: 1rem;
+}
+
+/* section info ps4 */
+
+.info-ps4-sec img{
+    width: 100%;
+
+}
+
+.info-ps4-sec .btn_bg{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+/* ps plus section */
+
+.plus-section{
+    background-color: var(--lightgrey);
+}
+
+.plus-section [src*="monthly"]{
+    height: 350px;
+    position: absolute;
+    right: 3rem;
+}
+
+.plus-section [src*="plus-logo"]{
+    width: 100%;
+}
+
+.plus-section .btn_bg{
+    background-color: #D9DADC;
+    border-color: #D9DADC;
+    color: var(--main-blue);
+}
+
+/* discount section */
+
+.discount-sec img{
+    width: 100%;
 }
