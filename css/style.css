@@ -1,0 +1,32 @@
+/* nav section */
+
+.menu_item{
+    position: relative;
+}
+
+.dropdown-item:hover{
+    background-color: white;
+}
+
+.dropdown-item:focus{
+    background-color: white;
+}
+
+.menu_item .menu_item_text{
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+li, ul{
+    list-style: none;
+}
+
+nav .first-ul{
+    width: 100%;
+}
+
+.items-ul{
+    width: 400px;
+}
