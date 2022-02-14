@@ -77,7 +77,7 @@ nav .first-ul{
     border-radius: 1em;
 }
 
-/* first section */
+/* banner section */
 
 .bg-image{
     background-image: url(../img/jumbo-bg.png);
@@ -88,7 +88,7 @@ nav .first-ul{
     margin-top: 6rem;
 }
 
-.banner .btn_bg{
+.banner-sec .btn_bg{
     background-color: red;
     color: white;
     border-color: red;
@@ -99,6 +99,16 @@ nav .first-ul{
     bottom: 0;
 }
 
-.banner [src*="hero"]{
+.banner-sec [src*="hero"]{
     width: 50%;
 }
+
+/* games section */
+
+.games-sec img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
