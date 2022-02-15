@@ -6,6 +6,11 @@
     --lightgrey: #BEBCBB;
     --footer-blue: #194296;
 }
+
+html{
+    overflow-x: hidden;
+}
+
 .pt-6{
     padding-top: 6rem;
 }
@@ -82,6 +87,11 @@ header [src*="sony"]{
 
 .nav-link:hover{
     color: black;
+}
+
+nav .btn_bg:hover{
+    outline: 2px solid  black;
+    border: 1px solid white;
 }
 
 
