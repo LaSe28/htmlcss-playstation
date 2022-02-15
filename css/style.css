@@ -39,10 +39,7 @@
 
 
 /* header */
-header{
-    background-color: black;
-    text-align: right;
-}
+
 
 header [src*="sony"]{
     height: 20px;
@@ -50,26 +47,16 @@ header [src*="sony"]{
     padding-right: .5rem;
 }
 
+.header-top{
+    text-align: right;
+    background-color: black;
+}
 
 /* nav section */
-li, ul{
-    list-style: none;
-}
-
-nav .first-ul{
-    width: 100%;
-}
-
-.items-ul{
-    width: 560px;
-}
-
-.menu_item{
-    position: relative;
-}
 
 .dropdown-item:hover{
     background-color: white;
+    box-shadow: 0 0 5px;
 }
 
 .dropdown-item:focus{
@@ -82,13 +69,6 @@ nav .first-ul{
 
 .nav-link:hover{
     color: black;
-}
-
-.menu_item .menu_item_text{
-    position: absolute;
-    bottom: -1rem;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 
@@ -265,10 +245,20 @@ nav .first-ul{
 
 footer{
     background-color: var(--footer-blue);
-    color: white;
+    color: white;   
+}
+
+footer li{
+    list-style: none;
 }
 
 footer a{
     text-decoration: none;
     color: white;
 }
+
+footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
