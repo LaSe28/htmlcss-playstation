@@ -4,6 +4,7 @@
     --main-red: #BD4825;
     --main-grey: #1f1f1f;
     --lightgrey: #BEBCBB;
+    --footer-blue: #194296;
 }
 .pt-6{
     padding-top: 6rem;
@@ -205,6 +206,7 @@ nav .first-ul{
     height: 350px;
     position: absolute;
     right: 3rem;
+    top: 0;
 }
 
 .plus-section [src*="plus-logo"]{
@@ -221,4 +223,52 @@ nav .first-ul{
 
 .discount-sec img{
     width: 100%;
+}
+
+/* playstatio now section */
+
+.ps-now-sec{
+    background-color: #171C39;
+    color: white;
+}
+
+.ps-now-sec [src*="now-logo"]{
+    width: 100%;
+}
+
+.ps-now-sec [src*="now-april"]{
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 992px){
+    .ps-now-sec [src*="now-april"]{
+        right: 0;
+    } 
+}
+
+.ps-now-sec .btn_bg{
+    background-color: #D9DADC;
+    border-color: #D9DADC;
+    color: black;
+}
+
+/* social section */
+
+.social-sec img{
+    width: 100%;
+}
+
+/* footers section */
+
+footer{
+    background-color: var(--footer-blue);
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }
