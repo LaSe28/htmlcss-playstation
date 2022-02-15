@@ -32,9 +32,9 @@
 }
 
 
-
-
-
+.dropdown-toggle::after{
+    display: none;
+}
 
 
 
@@ -52,6 +52,7 @@ header [src*="sony"]{
     background-color: black;
 }
 
+
 /* nav section */
 
 .dropdown-item:hover{
@@ -61,6 +62,18 @@ header [src*="sony"]{
 
 .dropdown-item:focus{
     background-color: white;
+}
+
+.showed{
+    color: var(--lightgrey);
+}
+
+.dropdown:active .showed{
+    color: var(--main-blue);
+}
+
+.dropdown:focus-within .showed{
+    transform: rotate(180deg);
 }
 
 .nav-link{
@@ -87,7 +100,12 @@ header [src*="sony"]{
 .banner-sec .btn_bg{
     background-color: var(--main-red);
     color: white;
-    border-color: var(--main-red);
+    border: 1px solid  var(--main-red);
+}
+
+.banner-sec .btn_bg:hover{
+    outline: 2px solid  var(--main-red);
+    border: 1px solid black;
 }
 
 .banner-text{
@@ -101,9 +119,24 @@ header [src*="sony"]{
 
 /* games section */
 
+.games-sec [class*="active"]{
+    border: 5px solid white;
+    outline: 2px solid var(--main-blue);
+}
+
+ 
+
 .games-sec img{
     width: 100%;
     border-radius: 1rem;
+}
+
+.bounce{
+    transition: .3s;
+}
+
+.bounce:hover{
+    transform: translateY(-1rem);
 }
 
 /*  section intro*/
@@ -112,7 +145,7 @@ header [src*="sony"]{
     color: var(--main-blue)
 }
 
-/* section info */
+/* section info ps5*/
 
 .info-ps5-sec .btn_bg{
     background-color: var(--main-blue);
@@ -120,17 +153,33 @@ header [src*="sony"]{
     color: white;
 }
 
+.info-ps5-sec .btn_bg:hover{
+    outline: 2px solid  var(--main-blue);
+    border: 1px solid white;
+}
+
 .info-ps5-sec img{
     width: 100%;
 }
 
 .info-ps5-sec [class*="-4"]{
+    border-bottom: 2px solid transparent;
     opacity: .7;
 }
 
 .info-ps5-sec .active{
     border-bottom: 2px solid var(--main-blue);
     opacity: 1;
+}
+
+.info-ps5-sec .active:hover{
+    cursor: pointer;
+}
+
+.info-ps5-sec .disabled:hover{
+    opacity: 1;
+    border-bottom: 2px solid var(--main-blue);
+    cursor: pointer;
 }
 
 /* second banner-sec */
@@ -150,6 +199,11 @@ header [src*="sony"]{
     background-color: var(--main-red);
     color: white;
     border-color: var(--main-red);
+}
+
+.banner-sec-2 .btn_bg:hover{
+    outline: 2px solid  var(--main-red);
+    border: 1px solid black;
 }
 
 /* games sec 2 */
@@ -176,6 +230,11 @@ header [src*="sony"]{
     color: white;
 }
 
+.info-ps4-sec .btn_bg:hover{
+    outline: 2px solid  var(--main-blue);
+    border: 1px solid white;
+}
+
 /* ps plus section */
 
 .plus-section{
@@ -189,6 +248,12 @@ header [src*="sony"]{
     top: 0;
 }
 
+@media screen and (max-width: 992px){
+    .plus-section [src*="monthly"]{
+        right: 0;
+    } 
+}
+
 .plus-section [src*="plus-logo"]{
     width: 100%;
 }
@@ -197,6 +262,11 @@ header [src*="sony"]{
     background-color: #D9DADC;
     border-color: #D9DADC;
     color: var(--main-blue);
+}
+
+.plus-section .btn_bg:hover{
+    outline: 2px solid  #D9DADC;
+    border: 1px solid var(--lightgrey);
 }
 
 /* discount section */
@@ -233,6 +303,11 @@ header [src*="sony"]{
     background-color: #D9DADC;
     border-color: #D9DADC;
     color: black;
+}
+
+.ps-now-sec .btn_bg:hover{
+    outline: 2px solid  #D9DADC;
+    border: 1px solid #171C39;
 }
 
 /* social section */
