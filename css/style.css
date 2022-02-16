@@ -153,6 +153,7 @@ nav .btn_bg:hover{
 
 .bounce:hover{
     transform: translateY(-1rem);
+    box-shadow: 0 4px 8px black;
 }
 
 /*  section intro*/
@@ -232,6 +233,13 @@ nav .btn_bg:hover{
 .games-sec-2 img{
     width: 100%;
     border-radius: 1rem;
+    transition: 0.2s;
+}
+
+.games-sec-2 img:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 0 7px black;
+    cursor: pointer;
 }
 
 /* section info ps4 */
