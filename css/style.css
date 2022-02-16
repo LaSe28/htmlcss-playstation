@@ -338,6 +338,12 @@ nav .btn_bg:hover{
 
 .social-sec img{
     width: 100%;
+    transition: .2s;
+}
+
+.social-sec img:hover{
+    transform: scale(1.03,1.03);
+    box-shadow: 0 0 7px black;
 }
 
 /* footers section */
@@ -358,6 +364,5 @@ footer a{
 
 footer a:hover{
     color:white;
-    text-decoration: underline;
 }
 
