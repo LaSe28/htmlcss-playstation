@@ -82,7 +82,7 @@ header [src*="sony"]{
     color: var(--main-blue);
 }
 
-.show .showed{
+.dropdown .show .showed{
     transform: rotate(180deg);
     color: var(--main-blue);
 }
