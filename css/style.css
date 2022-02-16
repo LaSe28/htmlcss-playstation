@@ -41,6 +41,11 @@ html{
     display: none;
 }
 
+.list_style{
+    list-style: disc;
+    color: var(--main-blue);
+}
+
 
 
 /* header */
@@ -77,8 +82,9 @@ header [src*="sony"]{
     color: var(--main-blue);
 }
 
-.dropdown:focus-within .showed{
+.show .showed{
     transform: rotate(180deg);
+    color: var(--main-blue);
 }
 
 .nav-link{
